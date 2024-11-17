@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_message"
+        android:icon="@drawable/caocao"
+        android:title="微信" />
+    <item
+        android:id="@+id/menu_address_book"
+        android:icon="@drawable/caomao"
+        android:title="通讯录" />
+    <item
+        android:id="@+id/menu_discovery"
+        android:title="发现" />
+
+    <item
+        android:id="@+id/menu_me"
+        android:icon="@drawable/sunhanhua"
+        android:title="我" />
+</menu>
