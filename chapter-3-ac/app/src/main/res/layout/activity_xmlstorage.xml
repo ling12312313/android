@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XMLStorageActivity">
+
+
+    <EditText
+        android:gravity="top"
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineHeight="20dp"
+        android:hint="输入姓名"
+        android:textSize="18sp"/>
+    <EditText
+        android:gravity="top"
+        android:id="@+id/etPhone"
+        android:layout_below="@id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineHeight="20dp"
+        android:hint="输入电话"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_below="@id/etPhone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:onClick="operate"/>
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:onClick="operate"/>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="top"
+        android:layout_below="@id/ll_btn"
+        android:id="@+id/txtShowCnt"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
